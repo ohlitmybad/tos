@@ -184,6 +184,75 @@ header a {
 
 	  
 
+#customTable2 tbody {
+    text-align: center;
+    color: #8e8a8a;
+}
+
+table {
+    border-collapse: collapse;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    border-radius: 10px;
+    margin-bottom: 12px;
+    width: 100%;
+    text-align: center;
+}
+
+th {
+    text-align: center;
+    background-color: #d8d9de;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+
+}
+
+th div {
+    font-size: 20px;
+    margin-bottom: 9px;
+    margin-top: 9px;
+    color: #696969;
+    text-align: center;
+}
+
+th div2 {
+    font-size: 20px;
+    color: #696969;
+    text-align: center;
+    line-height: 1.1;
+    
+}
+
+
+
+td {
+    background-color: #ffffff;
+    text-align: center;
+    
+}
+
+tr:nth-child(even) td {
+    background-color: #f1f1f1;
+    text-align: center;
+    font-size: 18px;
+    text-align: center;
+    color: #8e8a8a;
+    line-height: 35px;
+
+    
+}
+
+tr:nth-child(odd) td {
+    text-align: center;
+    font-size: 18px;
+    text-align: center;
+    color: #8e8a8a;
+    line-height: 35px;
+}
+
+
   </style>
 
 
@@ -304,20 +373,59 @@ header a {
     <!-- FREE TOOLS -->
    
     <ul>TOOLS<br><br>
-      <li>Player radars<br>2023/24<br>2022/23<br>2021/22 (Top 7)</li>
-      <li>Player plots<br>2023/24<br>2022/23 (Top 7)</li>
-      <li>Rank profile tool<br>2023/24</li>
-      <li>Attribute search tool<br>2023/24<br>2022/23</li>
-      <li>Performance index<br>2023/24</li>
-      <li>AI chat beta<br>2023/24 (Top 5)</li>
+      <li>Player radars</li>
+      <li>Player plots</li>
+      <li>Rank profile tool</li>
+      <li>Attribute search tool</li>
+      <li>Performance index</li>
+      <li>AI chat beta</li>
 
     </ul><br>
   
-	  The free team tools (radars and plots) are included ad-free in the Pro subscription.</p><br>
+
+    <div class="table-container">
+        <table id="customTable" class="mdl-data-table mdl-js-data-table mdl-shadow--2dp">
+            <thead>
+                <tr>
+                  <th><div2>🏴󠁧󠁢󠁥󠁮󠁧󠁿🏴󠁧󠁢󠁥󠁮󠁧󠁿🇪🇸🇪🇸🇮🇹🇮🇹🇩🇪🇩🇪🇫🇷🇫🇷🇳🇱🇵🇹🇦🇹🇧🇪🇹🇷🏴󠁧󠁢󠁳󠁣󠁴󠁿🇨🇭🇩🇰🇳🇴🇸🇪<br>
+                    🇷🇸🇨🇿🇭🇷🇵🇱🇬🇷🇺🇦🇷🇺🇮🇱🇯🇵🇰🇷🇸🇦🇺🇸🇲🇽🇧🇷🇦🇷🇺🇾🇨🇴🇪🇨🇵🇾🇨🇱
+                  </div2></th>
+                </tr>
+    
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+        <table id="leaguesTable" class="mdl-data-table mdl-js-data-table mdl-shadow--2dp">
+            <thead>
+                <tr>
+                    <th class="mdl-data-table__cell--non-numeric"></th>
+                    <th><div>2024¹</div></th>
+                    <th><div>23-24</div></th>
+                    <th><div>2023¹</div></th>
+                    <th><div>22-23</div></th>
+                    <th><div>2022¹</div></th>
+                    <th><div>21-22</div></th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+        <table id="customTable2" class="mdl-data-table mdl-js-data-table mdl-shadow--2dp">
+            <thead>
+                <tr>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+        
+<br>
+	  <p>The free team tools (radars and plots) are included ad-free in the Pro subscription.</p><br>
   
       <p>
           2.3 App : The full suite of DataMB Pro tools are available in the mobile app.</p>
-<p>2.4 Updates : Data is updated every week, and fully up-to-date every month.
+<p>2.4 Updates : DataMB Pro data is updated weekly.
 </p>
 <p>2.5 Future : The leagues, seasons and metrics supported by DataMB Pro are subject to change; with more expected to come in each tool. More tools are also expected to release for Pro subscribers.
 </p>
@@ -404,6 +512,59 @@ header a {
         <p>By subscribing to DataMB Pro, you acknowledge that you have read, understood, and agreed to these Terms and Conditions.</p><p> These terms constitute the entire agreement between you and DataMB regarding your use of the service.</p>
         </div>
 </div>
+
+
+<script>
+    const rows = ["Radars", "Plots", "Search", "Ranks", "Index", "Chat²", "Free Radars³", "Team Radars³", "Team Plots³", "Profiles³"];
+    const columns = ["2024", "23/24", "2023", "22/23", "2022", "21/22"];
+    const data = {
+        "Radars": [1, 1, 1, 1, 1, 1],
+        "Plots": [1, 1, 1, 1, 0, 0],
+        "Search": [0, 1, 1, 1, 1, 0],
+        "Ranks": [1, 1, 0, 0, 0, 0],
+        "Index": [1, 1, 0, 0, 0, 0],
+        "Chat²": [0, 1, 0, 0, 0, 0],
+        "Free Radars³": [0, 1, 0, 1, 0, 0],
+        "Team Radars³": [0, 1, 0, 1, 0, 0],
+        "Team Plots³": [0, 1, 0, 0, 0, 0],
+        "Profiles³": [0, 1, 0, 0, 0, 0]
+    };
+  
+    const tableBody = document.querySelector("#leaguesTable tbody");
+  
+    rows.forEach(row => {
+        const tr = document.createElement("tr");
+        const tdHeader = document.createElement("td");
+        tdHeader.classList.add("mdl-data-table__cell--non-numeric");
+        tdHeader.textContent = row;
+        tr.appendChild(tdHeader);
+  
+        columns.forEach((column, index) => {
+            const td = document.createElement("td");
+            td.textContent = data[row][index] === 1 ? "X" : "";
+            tr.appendChild(td);
+        });
+  
+        tableBody.appendChild(tr);
+    });
+  
+  
+  
+    const customRows2 = ["¹ Calendar Leagues → 🇳🇴🇸🇪🇧🇷🇦🇷🇺🇾🇨🇴🇪🇨🇵🇾🇨🇱🇯🇵🇰🇷🇺🇸", "² Top 5 Leagues → 🏴󠁧󠁢󠁥󠁮󠁧󠁿🇪🇸🇮🇹🇩🇪🇫🇷", "³ Free : Top 7 Leagues → 🏴󠁧󠁢󠁥󠁮󠁧󠁿🇪🇸🇮🇹🇩🇪🇫🇷🇳🇱🇵🇹","Minimum 1000 minutes played, league-only"];
+    const customTableBody2 = document.querySelector("#customTable2 tbody");
+  
+    customRows2.forEach(text => {
+        const tr2 = document.createElement("tr");
+        const td2 = document.createElement("td");
+        td2.textContent = text;
+        tr2.appendChild(td2);
+        customTableBody2.appendChild(tr2);
+    });
+  
+  
+  
+  
+  </script>
 
  <footer class="footer">
     <div class="logo">
