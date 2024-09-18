@@ -390,6 +390,7 @@ header a {
         <thead>
             <tr>
                 <th class="mdl-data-table__cell--non-numeric"></th>
+                <th><div>24/25</div></th>		    
                 <th><div>2024¹</div></th>
                 <th><div>23/24</div></th>
                 <th><div>2023¹</div></th>
@@ -489,18 +490,18 @@ header a {
 
 <script>
     const rows = ["Radars", "Plots", "Search", "Ranks", "Index", "Chat²", "Free Radars³", "Team Radars³", "Team Plots³", "Profiles³"];
-    const columns = ["2024", "23/24", "2023", "22/23", "2022", "21/22"];
+    const columns = ["24/25", "2024", "23/24", "2023", "22/23", "2022", "21/22"];
     const data = {
-        "Radars": [1, 1, 1, 1, 1, 1],
-        "Plots": [1, 1, 1, 1, 0, 0],
-        "Search": [0, 1, 1, 1, 1, 0],
-        "Ranks": [1, 1, 0, 0, 0, 0],
-        "Index": [1, 1, 0, 0, 0, 0],
-        "Chat²": [0, 1, 0, 0, 0, 0],
-        "Free Radars³": [0, 1, 0, 1, 0, 0],
-        "Team Radars³": [0, 1, 0, 1, 0, 0],
-        "Team Plots³": [0, 1, 0, 0, 0, 0],
-        "Profiles³": [0, 1, 0, 0, 0, 0]
+      "Radars": [1, 1, 1, 1, 1, 1, 1],
+      "Plots": [1, 1, 1, 1, 0, 0, 0],
+      "Search": [1, 1, 1, 1, 0, 0, 0],
+      "Ranks": [1, 1, 0, 0, 0, 0, 0],
+      "Index": [1, 1, 0, 0, 0, 0, 0],
+      "Chat²": [1, 0, 0, 0, 0, 0, 0],
+      "Free Radars³": [1, 0, 1, 0, 0, 0, 0],
+      "Team Radars³": [1, 0, 1, 0, 0, 0, 0],
+      "Team Plots³": [1, 0, 0, 0, 0, 0, 0],
+      "Profiles³": [1, 0, 0, 0, 0, 0, 0]
     };
   
     const tableBody = document.querySelector("#leaguesTable tbody");
